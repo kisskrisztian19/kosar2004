@@ -8,7 +8,6 @@
         public int IPont { get; private set; }
         public string Hely { get; private set; }
         public string Ido { get; private set; }
-        
 
         public Meccs(string Hazai, string Idegen, int HPont, int IPont, string Hely, string Ido)
         {
@@ -18,6 +17,10 @@
             this.IPont = IPont;
             this.Hely = Hely;
             this.Ido = Ido;
+        }
+        public string Atalakit()
+        {
+            return $"{Hazai} - {Idegen} ({HPont}:{IPont})";
         }
     }
 }
